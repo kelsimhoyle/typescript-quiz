@@ -30,12 +30,25 @@ export const Wrapper = styled.div`
         color: #f5f5f5;
     }
 
+    h2,
     label,
     .score {
         color: #f5f5f5;
-        font-size: 2rem;
         margin: 0;
         filter: drop-shadow(2px 2px #0085a3);
+    }
+
+    h2, 
+    .score {
+        font-size: 2rem;
+    }
+
+    label {
+        font-size: 1.5rem;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     h1 {

@@ -84,6 +84,9 @@ const App = () => {
         <h1>Random Trivia!</h1>
         {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
           <>
+           {userAnswers.length === TOTAL_QUESTIONS && (
+             <h2>Play Again!</h2>
+           )}
             <label>
               <span>Choose your difficulty: </span>
               <select
